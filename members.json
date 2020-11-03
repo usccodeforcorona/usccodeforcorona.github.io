@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Eszter Morvay",
+        "photo": "member-images/eszter.png",
+        "position": "President",
+        "description": "Eszter is the founder of Code for Corona. She is a prospective Software Developer studying Computer Science at USC."
+    },
+    {
+        "name": "Karim Rahal",
+        "photo": "member-images/karim.jpg",
+        "position": "Program Commitee Chair",
+        "description": "Karim is an Ethical Hacker who has been part of the Bug Bounty scene since the age of 13. Currently, he is a Computer Science major at USC and is specializing in Computer Security."
+    },
+    {
+        "name": "Lance Yu",
+        "photo": "member-images/lance.jpg",
+        "position": "Treasurer",
+        "description": "Lance is a Computer Science (Games) major at USC."
+    },
+    {
+        "name": "Spencer Lin",
+        "photo": "member-images/spencer.jpg",
+        "position": "Vice President",
+        "description": "Spencer is currently a CS major at USC and the vice president of Code For Corona.  He is also the founder of a 501(c)(3) nonprofit called Planet Save that partners with USC to help protect the environment.  Aside from work, Spencer is a racing drone enthusiast who's down to race, if you are!"
+    }
+]
