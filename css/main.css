@@ -201,9 +201,9 @@ header img:hover {
 }
 
 #join-us a:hover {
-    -webkit-transform: skewY(2deg);
-        -ms-transform: skewY(2deg);
-            transform: skewY(2deg);
+    -webkit-transform: scale(.98);
+        -ms-transform: scale(.98);
+            transform: scale(.98);
     cursor: pointer;
 }
 
@@ -222,6 +222,9 @@ header img:hover {
 }
 
 #what-we-do .cards-container:hover > .card:hover {
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
     -webkit-box-shadow: var(--shadow-bottom-color-1);
             box-shadow: var(--shadow-bottom-color-1);
     opacity: 1;
