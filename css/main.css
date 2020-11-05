@@ -286,6 +286,7 @@ header img:hover {
 }
 
 #members .card p {
+    font-size: 1.1em;
     padding: 30px;
     color: var(--color-1);
 }
@@ -391,6 +392,10 @@ _:default:not(:root:root), header{
 
     #members .card h2 {
         margin-top: -15px;
+    }
+
+    #members .card p {
+        font-size: 1em;
     }
 
     footer #contact-info h1 {
