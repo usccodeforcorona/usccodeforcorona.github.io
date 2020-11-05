@@ -201,10 +201,14 @@ header img:hover {
 }
 
 #join-us a:hover {
-    -webkit-transform: scale(.98);
-        -ms-transform: scale(.98);
-            transform: scale(.98);
+    opacity: 0.9;
     cursor: pointer;
+}
+
+#join-us a:active {
+    -webkit-transform: scale(.98);
+    -ms-transform: scale(.98);
+        transform: scale(.98);
 }
 
 /* What We Do */
