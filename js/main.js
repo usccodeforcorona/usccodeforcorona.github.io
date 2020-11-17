@@ -1,6 +1,6 @@
 // # Settings
 
-MEMBERS_FILE = "members.json";
+const MEMBERS_FILE = "members.json";
 
 // # Listeners
 
