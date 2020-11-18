@@ -272,7 +272,7 @@ header img:hover {
 
 #what-we-do .card {
   background-color: var(--dirty-white);
-  padding: 50px;
+  padding: 100px 30px;
 }
 
 #what-we-do .card h1 {
