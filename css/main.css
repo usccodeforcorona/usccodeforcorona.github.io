@@ -272,7 +272,7 @@ header img:hover {
 
 #what-we-do .card {
   background-color: var(--dirty-white);
-  padding: 100px 30px;
+  padding: 80px 30px;
 }
 
 #what-we-do .card h1 {
@@ -404,9 +404,14 @@ header {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .card p {
     font-size: 1em;
+  }
+  .card {
+    flex-basis: 100%;
+    flex-grow: 1;
+    width: 50px;
   }
 }
 
@@ -418,14 +423,6 @@ header {
   #join-us p {
     font-size: 1.5em;
   }
-
-  .card {
-    -webkit-box-flex: 0.5;
-    -ms-flex-positive: 0.5;
-    flex-grow: 0.5;
-    flex-basis: 100%;
-  }
-
   #members .card img {
     height: 250px;
   }
