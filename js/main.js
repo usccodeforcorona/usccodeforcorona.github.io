@@ -19,63 +19,36 @@ async function createMemberCards() {
 }
 
 function addMemberCard(member) {
-    /*
-    <div class="flex-container card">
-        <img src="member-images/member-photo.png" alt="Firstname Lastname's photo">
-        <div class="content">
-            <div class="info">
-                <h1>Firstname Lastname</h1>
-                <h2>Role1</h2>
-            </div>
-            <p>Description</p>
-        </div>
-    </div>
-    */
+    // Container for cards
+    let cardsContainer = document.querySelector("#members");
 
-    // # Create container
+    // Template
+    let template = document.querySelector("#member");
+    let clone = template.content.cloneNode(true);
 
-    let container = document.createElement("div");
-    container.classList = "flex-container card";
+    // Photo
+    let photo = clone.querySelector(".member-photo");
+    photo.src = member.photo;
+    photo.alt = `${member.name}'s photo`;
 
-    // ## Create member image
+    // Content
+    let content = clone.querySelector(".content");
 
-    let memberImg = document.createElement("img"); 
-    memberImg.src = member.photo;
-    memberImg.alt = `${member.name}'s photo`;
+    // Info
+    let info = content.querySelector(".info");
 
-    // ## Create content
+    // Name
+    let name = info.querySelector(".member-name");
+    name.textContent = member.name;
 
-    let content = document.createElement("div");
-    content.className = "content";
+    // Position
+    let position = info.querySelector(".member-position");
+    position.textContent = member.position;
 
-    // ### Info
+    // Description
+    let description = content.querySelector(".member-description");
+    description.textContent = member.description;
 
-    let info = document.createElement("div");
-    info.className = "info";
-
-    let memberName = document.createElement("h1");
-    memberName.textContent = member.name;
-
-    // ### Description
-
-    let memberDescription = document.createElement("p");
-    memberDescription.textContent = member.description;
-
-    // # Connect elements
-
-    container.appendChild(memberImg);
-    info.appendChild(memberName);
-
-
-    let memberPosition = document.createElement("h2");
-    memberPosition.textContent = member.position;
-    info.appendChild(memberPosition);
-
-    content.appendChild(info);
-    content.appendChild(memberDescription);
-    container.appendChild(content);
-
-    let cardsContainer = document.getElementById("members");
-    cardsContainer.appendChild(container);
-
+    // Add to container
+    cardsContainer.appendChild(clone);
 }
