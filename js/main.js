@@ -1,14 +1,12 @@
-// # Settings
+// Constants
 
 const MEMBERS_FILE = "members.json";
 
-// # Listeners
+// Listeners
 
 window.addEventListener("DOMContentLoaded", createMemberCards);
 
-// # Functions 
-
-// ## Member cards
+// Member cards
 
 async function createMemberCards() {
     let membersFile = await fetch(MEMBERS_FILE);
